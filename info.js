@@ -2,8 +2,13 @@ window.htmlTemplate = `
 <div class="product">
     <a href="{{product_url}}">
         <img src="{{image}}" alt="{{prod_name}}">
-        <div class="title">{{prod_name}}</div>
-        <div class="price">{{currency_symbol}}{{price}}</div>    
+        <div class="info">
+          <div>
+            <div class="prod-name">{{prod_name}}</div>
+            <div class="manufacturer">{{manufacturer}}</div>
+          </div>
+          <div class="price">{{currency_symbol}}{{price}}</div>   
+        </div> 
     </a>
 </div>
 `

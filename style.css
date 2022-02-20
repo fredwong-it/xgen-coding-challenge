@@ -1,5 +1,11 @@
+#XgenElement {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Work Sans', sans-serif;
+}
+
 .product > a > img {
-  width: 20%;
+  width: 300px;
 }
 
 .product > a {
@@ -7,12 +13,37 @@
 }
 
 .product {
-  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 
-.title, .price {
-  color: black;
-  font-size: 36px;
-  margin: 20px;
+.product:hover .prod-name {
+  text-decoration: underline;
+}
 
+.product:hover img {
+  opacity: .7;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prod-name {
+  color: #3d4246;
+  margin: 5px 0px;
+}
+
+.manufacturer {
+  font-size: 12px;
+  color: gray;
+  margin: 5px 0px;
+}
+
+.price {
+  color: #676e76;
+  margin: 5px 0px;
 }
