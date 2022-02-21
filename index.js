@@ -21,8 +21,6 @@
         product.product_types.includes('top')
     )
 
-    console.log('displayProducts', displayProducts)
-
     for (const product of displayProducts) {
       const productDiv = document.createElement('div')
       const productHtml = renderTemplate(htmlTemplate, product, (data, key) => {
