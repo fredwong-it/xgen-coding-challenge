@@ -1,6 +1,7 @@
 #XgenElement {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   font-family: 'Work Sans', sans-serif;
 }
 
