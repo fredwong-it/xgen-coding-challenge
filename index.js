@@ -21,7 +21,7 @@
         product.product_types.includes('top')
     )
 
-    for (const product of displayProducts) {
+    for (const product of displayProducts.slice(0, 4)) {
       const productDiv = document.createElement('div')
       const productHtml = renderTemplate(htmlTemplate, product, (data, key) => {
         if (key === 'price' && data.sale_price !== 'None') {
